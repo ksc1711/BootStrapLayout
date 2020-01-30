@@ -33,9 +33,6 @@ namespace BootStrapLayout.Controllers
         // GET: home/widgets
         public ActionResult Widgets()
         {
-            //[TEST] to initialize the theme setter
-            //could be called via jQuery or somewhere...
-            //Settings.SetValue<string>("config:CurrentTheme", "smart-style-5");
 
             return View();
         }
