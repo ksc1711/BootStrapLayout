@@ -48,29 +48,7 @@ namespace BootStrapLayout.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(AccountLoginModel viewModel)
         {
-            // Ensure we have a valid viewModel to work with
-            /*if (!ModelState.IsValid)
-                return View(viewModel);
-
-            // Verify if a user exists with the provided identity information
-            var user = await _manager.FindByEmailAsync(viewModel.Email);
-
-            // If a user was found
-            if (user != null)
-            {
-                // Then create an identity for it and sign it in
-                await SignInAsync(user, viewModel.RememberMe);
-
-                // If the user came from a specific page, redirect back to it
-                return RedirectToLocal(viewModel.ReturnUrl);
-            }
-
-            // No existing user was found that matched the given criteria
-            ModelState.AddModelError("", "Invalid username or password.");
-
-            // If we got this far, something failed, redisplay form
-            return View(viewModel);
-             * */
+            
             return View();
         }
 
